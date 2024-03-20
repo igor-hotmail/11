@@ -10,6 +10,12 @@ app.get('/api/weather', (req, res) => {
   })
 })
 
+app.get('/api/currency', (req, res) => {
+    res.json({
+      'USD': 100
+    })
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
